@@ -1,0 +1,44 @@
+@startuml
+entity operators {
+    * id : text <<PK>>
+    --
+    name : text
+}
+
+entity routes {
+    * id : text <<PK>>
+    --
+    operator_id : text <<FK>>
+    city_id : text
+    mode : text
+    short_name : text
+}
+
+entity stops {
+    * id : text <<PK>>
+    --
+    city_id : text
+    name : text
+}
+
+entity route_stops {
+    * route_id : text <<PK, FK>>
+    * stop_sequence : integer <<PK>>
+    --
+    stop_id : text <<FK>>
+}
+
+entity trips {
+    * id : text <<PK>>
+    --
+    route_id : text <<FK>>
+    service_date : date
+    scheduled_departure_utc : timestamptz
+    status : text
+}
+
+operators ||--o{ routes
+routes ||--o{ route_stops
+stops ||--o{ route_stops
+routes ||--o{ trips
+@enduml
