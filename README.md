@@ -10,7 +10,7 @@ Setup og reset findes i README-filerne under de enkelte lectures.
 
 ### Lecture 1 – Introduction to Databases
 
-Model, workload map og resultater findes i [lab.md](lecture-1/docs/lab.md). ER-diagrammet findes i [er-diagram.puml](lecture-1/docs/er-diagram.puml). Schema og seed data findes i [001_relational_baseline.sql](lecture-1/database/postgres/001_relational_baseline.sql) og [002_seed.sql](lecture-1/database/postgres/002_seed.sql). De tre route/timetable queries findes i [003_queries.sql]([003_queries.sql](lecture-1/database/postgres/003_queries.sql)).
+Model, workload map og resultater findes i [lab.md](lecture-1/docs/lab.md). ER-diagrammet findes i [er-diagram.puml](lecture-1/docs/er-diagram.puml). Schema og seed data findes i [001_relational_baseline.sql](lecture-1/database/postgres/001_relational_baseline.sql) og [002_seed.sql](lecture-1/database/postgres/002_seed.sql). De tre route/timetable queries findes i [003_queries.sql](lecture-1/database/postgres/003_queries.sql).
 
 Jeg valgte `(route_id, stop_sequence)` som primary key for `route_stops`. Det gør at samme stop kan forekomme flere gange på samme route på forskellige positioner.
 
