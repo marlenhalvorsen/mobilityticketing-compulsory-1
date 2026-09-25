@@ -10,7 +10,7 @@ Build the smallest relational model that supports route maintenance and upcoming
 2. Decide the primary key of the route-stop relation and explain the decision.
 3. Add primary-key and foreign-key relationships.
 4. Insert the supplied seed data.
-5. Write the three workload queries in `database/postgres/003_queries.sql.example`.
+5. Write the three workload queries in `database/postgres/003_queries.sql`.
 6. Compare the implemented schema with your ER diagram and record any difference.
 
 ## Workload queries
